@@ -29,5 +29,5 @@ public abstract class MobilePlan {
         double actualPrice =  units *rate;
         double discounted = actualPrice * discPercentage/100;
         System.out.println("Discounted price: = " + discounted);
-    }
+    } 
 }

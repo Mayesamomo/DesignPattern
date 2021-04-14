@@ -17,4 +17,12 @@ public class Bill {
     public void downloadBill(){
         System.out.println("bill downloaded!");
     }
+    
+    public void payBill(){
+        System.out.println("bill paid!");
+    }
+    
+    public void subscribePrepaid(){
+        System.out.println("subsciption successful!");
+    }
 }
