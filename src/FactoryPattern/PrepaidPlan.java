@@ -13,12 +13,14 @@ public class PrepaidPlan extends MobilePlan{
 
     private double prepaidRate;
     private double disc;
+    
     public PrepaidPlan() {
     }
 
     public PrepaidPlan(double prepaidRate) {
         this.prepaidRate = prepaidRate;
     }
+    
     
     @Override
     void getRate() {

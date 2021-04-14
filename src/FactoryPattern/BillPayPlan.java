@@ -16,12 +16,12 @@ public class BillPayPlan extends MobilePlan {
 
     @Override
     void getRate() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        rate = this.BillRate;
     }
 
     @Override
     void getDiscount() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        discount =this.disc;
     }
 
 }

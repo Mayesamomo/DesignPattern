@@ -9,14 +9,25 @@ package FactoryPattern;
  *
  * @author micha
  */
+//abstract class for mobile plan
 public abstract class MobilePlan {
+
     protected double rate;
     protected double discount;
+
     abstract void getRate();
+
     abstract void getDiscount();
-    
+
     //calculate bills
-     public void calculateBill(int units){  
-              System.out.println(units*rate);  
-          } 
+    public void calculateBill(int units) {
+        System.out.println(units * rate);
+    }
+    
+    //calculate discount.
+    public void calcDiscount(double discPercentage,int units){
+        double actualPrice =  units *rate;
+        double discounted = actualPrice * discPercentage/100;
+        System.out.println("Discounted price: = " + discounted);
+    }
 }
