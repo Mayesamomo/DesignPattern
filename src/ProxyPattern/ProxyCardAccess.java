@@ -9,9 +9,10 @@ package ProxyPattern;
  *
  * @author micha
  */
-public class ProxyCardAccess implements CardPaymentAccess{
-private Card debitCards;
-private DebitCards debits;
+public class ProxyCardAccess implements CardPaymentAccess {
+
+    private Card debitCards;
+    private final DebitCards debits;
 
     public ProxyCardAccess(DebitCards debits) {
         this.debits = debits;
@@ -21,9 +22,9 @@ private DebitCards debits;
     public void grantPayment() {
        
     }
-    
-    public double getAvailable(double price){
-    return 0;
-        
+
+    public double getAvailable(Card cardDeatails) {
+       
+      return debitCards.getCardNumber();
     }
 }
